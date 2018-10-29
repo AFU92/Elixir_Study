@@ -54,5 +54,17 @@ defmodule Exercises do
     end
   end
 
+  @spec example_map(%{id: any()}) :: any()
+  def example_map(%{id: id} = map) do
+    IO.puts("El id recibido es: #{id}")
+    IO.inspect(map, label: "Mapa")
+  end
+
+  @spec join(binary(), binary(), binary()) :: binary()
+  def join(a, b, sep \\ " ") do
+    a <> sep <> b
+  end
+
+
 end
 
