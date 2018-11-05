@@ -11,7 +11,7 @@ defmodule OwnersAdmin.Application do
       # Start the Ecto repository
       supervisor(OwnersAdmin.Repo, []),
       # Start the endpoint when the application starts
-      supervisor(OwnersAdminWeb.Endpoint, []),
+      supervisor(OwnersAdminWeb.Endpoint, [])
       # Start your own worker by calling: OwnersAdmin.Worker.start_link(arg1, arg2, arg3)
       # worker(OwnersAdmin.Worker, [arg1, arg2, arg3]),
     ]
